@@ -419,7 +419,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     height: 250px;
-    padding: 1px;
     -webkit-transition: background-position 500ms ease;
             transition: background-position 500ms ease;
     width: 100%; }
@@ -461,7 +460,8 @@ header {
     margin-right: 10px; }
 
 #projects-header {
-  background-color: #039BE5; }
+  background-color: #039BE5;
+  padding: 1px; }
   #projects-header h2 {
     margin: 100px 0 0 0; }
 

@@ -101,7 +101,6 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         height: 250px;
-        padding: 1px;
         transition: background-position 500ms ease;
         width: 100%;
     }
@@ -161,6 +160,7 @@ header {
 
 #projects-header {
     background-color: $blue2;
+    padding: 1px;
 
     h2 {
         margin: 100px 0 0 0;
