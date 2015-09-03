@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Header
+// 
+// -----------------------------------------------------------------------------
+header {
+    background-color: $blue;
+    display: flex;
+    padding: 25px 15px 15px 15px;
+    width: 100%;
+
+    #logo, #connect {
+        width: 50%;
+    }
+}
+
+#logo {
+
+    h1 {
+        margin: 0;
+    } 
+
+    a {
+        background: url(images/logo.png) no-repeat -18px 0;
+        background-size: 50px 50px;
+        display: block;
+        height: 50px;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+
+    span {
+        display: block;
+    }
+
+    .p-job-title {
+        opacity: .9;
+    }
+}
+
+#connect ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 25px 20px 20px 20px;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Hero
+// 
+// -----------------------------------------------------------------------------
+#hero {
+    background-color: $blue;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #hero {
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Projects
+// 
+// -----------------------------------------------------------------------------
+#projects {
+    color: #fff;
+
+    .project {
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        padding: 1px;
+        transition: background-position 500ms ease;
+        width: 100%;
+    }
+
+    .project:hover {
+        background-position: 55% center;
+    }
+
+    .project h3 {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 130px;
+    }
+
+    .project h3:before {
+        border-bottom: 1px solid #fff;
+        content: " ";
+        display: block;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        width: 25px;
+        top: -25px;
+    }
+
+    .project a {
+        color: #fff;
+        display: block;
+        height: 100%;
+    }
+
+    .project a .hover {
+        background-color: $green;
+        height: 100%;
+        opacity: 0;
+        padding: 15px;
+        transition: opacity 500ms ease;
+        width: 100%
+    }
+
+    .project a:hover .hover {
+        opacity: 1;
+    }
+
+    .project ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+}
+
+#projects-header {
+    background-color: $blue2;
+
+    h2 {
+        margin: 100px 0 0 0;
+    }
+}
+
+#failtowardsuccess {
+    background: #161616 url(images/failtowardsuccess.png);
+    background-size: 125px;
+}
+
+#gadgetreview {
+    background: #eee url(images/gadgetreview.png);
+    background-size: 275px;
+}
+
+#everybodywalk {
+    background: #9BC73B url(images/everybodywalk.png);
+}
+
+#stratalist {
+    background: #2292CC url(images/stratalist.png);
+}
+
+#lavarenne {
+    background: #186F55 url(images/lavarenne.png);
+    background-size: 300px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+
+        .project {
+            width: 33.333333%;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Footer
+// 
+// -----------------------------------------------------------------------------
+footer {
+    background-color: #212121;
+    height: 350px;
+    padding: 15px;
+
+    h4 {
+        margin-bottom: -5px;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #footer {
+        padding: 20px;
+    }
+}

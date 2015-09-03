@@ -1,0 +1,104 @@
+body {
+    color: #333;
+    font: 14px/20px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Header
+// 
+// -----------------------------------------------------------------------------
+#logo a {
+    font-size: 1rem;
+    font-weight: normal;
+    color: $white;
+
+    .p-job-title {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+}
+
+#connect ul {
+    text-align: right;
+
+    a {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #connect a {
+        font-size: 3em;
+    }
+
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Hero
+// 
+// -----------------------------------------------------------------------------
+#hero {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1200px) {
+    #hero {
+        font-size: 5.5em;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Projects
+// 
+// -----------------------------------------------------------------------------
+#projects {
+    color: #fff;
+
+    .project h3 {
+        font-size: 2rem;
+    }
+
+    .project .hover li {
+        font-weight: 300;
+    }
+}
+
+#projects-header h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+// -----------------------------------------------------------------------------
+// 
+// Footer
+// 
+// -----------------------------------------------------------------------------
+footer {
+    text-align: center;
+
+    h4 {
+        color: #fff;
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+    a {
+        color: $blue;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
