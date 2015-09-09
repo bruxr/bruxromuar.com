@@ -20,6 +20,7 @@ body {
 header {
     display: flex;
     padding: 25px 15px 15px 15px;
+    height: 25vh;
     width: 100%;
 
     #logo, #connect {
@@ -78,6 +79,7 @@ header {
 // 
 // -----------------------------------------------------------------------------
 #hero {
+    height: 75vh;
     padding: 15px;
 }
 

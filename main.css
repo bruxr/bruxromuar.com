@@ -369,6 +369,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 25px 15px 15px 15px;
+  height: 25vh;
   width: 100%; }
   header #logo, header #connect {
     width: 50%; }
@@ -405,6 +406,7 @@ header {
     padding: 25px 20px 20px 20px; } }
 
 #hero {
+  height: 75vh;
   padding: 15px; }
 
 @media only screen and (min-width: 1200px) {
