@@ -47,15 +47,28 @@ a {
 // 
 // -----------------------------------------------------------------------------
 #hero {
-    color: #fff;
-    font-size: 3em;
-    font-weight: 900;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 300;
     line-height: 1.5em;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+        text-transform: uppercase;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     #hero {
-        font-size: 5.5em;
+        
     }
 }
 

@@ -356,6 +356,7 @@ th {
   box-sizing: border-box; }
 
 body {
+  background-color: #fff;
   margin: 0;
   padding: 0; }
 
@@ -363,7 +364,6 @@ body {
   width: 100%; }
 
 header {
-  background-color: #03A9F4;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -405,7 +405,6 @@ header {
     padding: 25px 20px 20px 20px; } }
 
 #hero {
-  background-color: #03A9F4;
   padding: 15px; }
 
 @media only screen and (min-width: 1200px) {
@@ -533,14 +532,19 @@ a {
     font-size: 3em; } }
 
 #hero {
-  color: #fff;
-  font-size: 3em;
-  font-weight: 900;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.5em; }
-
-@media only screen and (min-width: 1200px) {
-  #hero {
-    font-size: 5.5em; } }
+  #hero h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    text-transform: uppercase; }
+  #hero h2, #hero h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem; }
 
 #projects {
   color: #fff; }
