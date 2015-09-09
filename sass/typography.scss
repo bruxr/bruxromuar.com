@@ -13,14 +13,7 @@ a {
 // 
 // -----------------------------------------------------------------------------
 #logo a {
-    font-size: 1rem;
-    font-weight: normal;
-    color: $white;
-
-    .p-job-title {
-        font-size: .8rem;
-        font-weight: 300;
-    }
+    text-indent: -9999px;
 }
 
 #connect ul {
