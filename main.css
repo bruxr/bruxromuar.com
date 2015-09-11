@@ -409,8 +409,6 @@ header {
   #projects .project:nth-child(2),
   #projects .project:nth-child(3) {
     background-color: #1d1e25; }
-  #projects .project:hover {
-    background-position: 55% center; }
   #projects .project h3 {
     position: relative;
     margin-bottom: 20px;
@@ -453,22 +451,24 @@ header {
     margin: 100px 0 0 0; }
 
 #failtowardsuccess {
-  background: #161616 url(images/failtowardsuccess.png);
-  background-size: 125px; }
+  background-image: url(images/f2s.png);
+  background-position: center 70px; }
 
 #gadgetreview {
-  background: #eee url(images/gadgetreview.png);
-  background-size: 275px; }
+  background-image: url(images/gadgetreview.png);
+  background-size: 125px; }
 
 #everybodywalk {
-  background: #9BC73B url(images/everybodywalk.png); }
+  background-image: url(images/everybodywalk.png); }
 
 #stratalist {
-  background: #2292CC url(images/stratalist.png); }
+  background-image: url(images/stratalist.png); }
 
 #lavarenne {
-  background: #186F55 url(images/lavarenne.png);
-  background-size: 300px; }
+  background-image: url(images/lavarenne.png); }
+
+#loadedboards {
+  background-image: url(images/loadedboards.png); }
 
 @media only screen and (min-width: 1200px) {
   #projects {
