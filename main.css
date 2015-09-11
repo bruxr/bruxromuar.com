@@ -406,6 +406,8 @@ header {
     -webkit-transition: background-position 500ms ease;
             transition: background-position 500ms ease;
     width: 100vw; }
+  #projects .project:hover {
+    background-position: center 35%; }
   #projects .project:nth-child(2),
   #projects .project:nth-child(3) {
     background-color: #1d1e25; }
