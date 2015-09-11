@@ -77,11 +77,17 @@ header {
     color: #fff;
 
     .project {
+        background-color: $asphalt;
         background-repeat: no-repeat;
         background-position: center;
         height: 50vh;
         transition: background-position 500ms ease;
         width: 100vw;
+    }
+
+    .project:nth-child(2),
+    .project:nth-child(3) {
+        background-color: darken($asphalt, 2%);
     }
 
     .project:hover {
@@ -176,7 +182,7 @@ header {
 
         .project {
             height: 50vh;
-            width: 33.33333333333333333vw;
+            width: 50%;
         }
     }
 }
