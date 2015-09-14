@@ -85,7 +85,8 @@ header {
         width: 100vw;
     }
 
-    .project:hover {
+    .project:hover,
+    .project.hover {
         background-position: center 35%;
     }
 
@@ -124,7 +125,8 @@ header {
         width: 100%
     }
 
-    .project a:hover .hover {
+    .project a:hover .hover,
+    .project.hover a .hover {
         opacity: 1;
     }
 

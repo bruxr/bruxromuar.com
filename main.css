@@ -406,7 +406,8 @@ header {
     -webkit-transition: background-position 500ms ease;
             transition: background-position 500ms ease;
     width: 100vw; }
-  #projects .project:hover {
+  #projects .project:hover,
+  #projects .project.hover {
     background-position: center 35%; }
   #projects .project:nth-child(even) {
     background-color: #1d1e25; }
@@ -434,7 +435,8 @@ header {
     -webkit-transition: opacity 500ms ease;
             transition: opacity 500ms ease;
     width: 100%; }
-  #projects .project a:hover .hover {
+  #projects .project a:hover .hover,
+  #projects .project.hover a .hover {
     opacity: 1; }
   #projects .project ul {
     list-style-type: none;
