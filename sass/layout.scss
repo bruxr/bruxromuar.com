@@ -89,8 +89,7 @@ header {
         background-position: center 35%;
     }
 
-    .project:nth-child(2),
-    .project:nth-child(3) {
+    .project:nth-child(even) {
         background-color: darken($asphalt, 2%);
     }
 
@@ -155,6 +154,7 @@ header {
 #failtowardsuccess {
     background-image: url(images/f2s.png);
     background-position: center 70px;
+    background-size: 40%;
 }
 
 #gadgetreview {
@@ -178,6 +178,15 @@ header {
     background-image: url(images/loadedboards.png);
 }
 
+#medallionmedia {
+    background-image: url(images/mm.png);
+    background-size: 35%;
+}
+
+#muradbuzz {
+    background-image: url(images/buzz.png);
+}
+
 @media only screen and (min-width: 1200px) {
     #projects {
         display: flex;
@@ -187,7 +196,16 @@ header {
             height: 50vh;
             width: 50%;
         }
+
+        .project:nth-child(2),
+        .project:nth-child(3),
+        .project:nth-child(6),
+        .project:nth-child(7) {
+            background-color: darken($asphalt, 2%);
+        }
     }
+
+
 }
 
 // -----------------------------------------------------------------------------
@@ -196,7 +214,7 @@ header {
 // 
 // -----------------------------------------------------------------------------
 footer {
-    background-color: #212121;
+    background-color: darken($asphalt, 3%);
     height: 350px;
     padding: 15px;
 

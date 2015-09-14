@@ -408,8 +408,7 @@ header {
     width: 100vw; }
   #projects .project:hover {
     background-position: center 35%; }
-  #projects .project:nth-child(2),
-  #projects .project:nth-child(3) {
+  #projects .project:nth-child(even) {
     background-color: #1d1e25; }
   #projects .project h3 {
     position: relative;
@@ -454,7 +453,8 @@ header {
 
 #failtowardsuccess {
   background-image: url(images/f2s.png);
-  background-position: center 70px; }
+  background-position: center 70px;
+  background-size: 40%; }
 
 #gadgetreview {
   background-image: url(images/gadgetreview.png);
@@ -472,6 +472,13 @@ header {
 #loadedboards {
   background-image: url(images/loadedboards.png); }
 
+#medallionmedia {
+  background-image: url(images/mm.png);
+  background-size: 35%; }
+
+#muradbuzz {
+  background-image: url(images/buzz.png); }
+
 @media only screen and (min-width: 1200px) {
   #projects {
     display: -webkit-box;
@@ -483,10 +490,15 @@ header {
             flex-wrap: wrap; }
     #projects .project {
       height: 50vh;
-      width: 50%; } }
+      width: 50%; }
+    #projects .project:nth-child(2),
+    #projects .project:nth-child(3),
+    #projects .project:nth-child(6),
+    #projects .project:nth-child(7) {
+      background-color: #1d1e25; } }
 
 footer {
-  background-color: #212121;
+  background-color: #1b1c22;
   height: 350px;
   padding: 15px; }
   footer h4 {
