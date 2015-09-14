@@ -415,13 +415,13 @@ header {
     margin-bottom: 20px;
     margin-top: 130px; }
   #projects .project h3:before {
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #fff;
     content: " ";
     display: block;
     left: 0;
-    opacity: .5;
+    opacity: .75;
     position: absolute;
-    width: 25px;
+    width: 50px;
     top: -25px; }
   #projects .project a {
     color: #fff;
