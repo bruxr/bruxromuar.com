@@ -13,6 +13,13 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('scripts', function() {
+    gulp.src('js/*.js')
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest('./'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('sass/**/*.scss', ['styles']);
+    gulp.watch('js/*.js', ['scripts']);
 });
