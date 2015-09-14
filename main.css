@@ -428,7 +428,6 @@ header {
     display: block;
     height: 100%; }
   #projects .project a .hover {
-    background-color: #43A047;
     height: 100%;
     opacity: 0;
     padding: 15px;
@@ -455,29 +454,45 @@ header {
   background-image: url(images/f2s.png);
   background-position: center 70px;
   background-size: 40%; }
+  #failtowardsuccess .hover {
+    background-color: #ffca28; }
 
 #gadgetreview {
   background-image: url(images/gadgetreview.png);
   background-size: 25%; }
+  #gadgetreview .hover {
+    background-color: #e74c3c; }
 
 #everybodywalk {
   background-image: url(images/everybodywalk.png); }
+  #everybodywalk .hover {
+    background-color: #ec048e; }
 
 #stratalist {
   background-image: url(images/stratalist.png); }
+  #stratalist .hover {
+    background-color: #007237; }
 
 #lavarenne {
   background-image: url(images/lavarenne.png); }
+  #lavarenne .hover {
+    background-color: #61bee2; }
 
 #loadedboards {
   background-image: url(images/loadedboards.png); }
+  #loadedboards .hover {
+    background-color: #ea513c; }
 
 #medallionmedia {
   background-image: url(images/mm.png);
   background-size: 35%; }
+  #medallionmedia .hover {
+    background-color: #18b2b8; }
 
 #muradbuzz {
   background-image: url(images/buzz.png); }
+  #muradbuzz .hover {
+    background-color: #03a9f4; }
 
 @media only screen and (min-width: 1200px) {
   #projects {

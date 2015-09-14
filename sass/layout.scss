@@ -117,7 +117,6 @@ header {
     }
 
     .project a .hover {
-        background-color: $green;
         height: 100%;
         opacity: 0;
         padding: 15px;
@@ -155,36 +154,68 @@ header {
     background-image: url(images/f2s.png);
     background-position: center 70px;
     background-size: 40%;
+
+    .hover {
+        background-color: #ffca28;
+    }
 }
 
 #gadgetreview {
     background-image: url(images/gadgetreview.png);
     background-size: 25%;
+
+    .hover {
+        background-color: #e74c3c;
+    }
 }
 
 #everybodywalk {
     background-image: url(images/everybodywalk.png);
+
+    .hover {
+        background-color: #ec048e;
+    }
 }
 
 #stratalist {
     background-image: url(images/stratalist.png);
+
+    .hover {
+        background-color: #007237;
+    }
 }
 
 #lavarenne {
     background-image: url(images/lavarenne.png);
+
+    .hover {
+        background-color: #61bee2;
+    }
 }
 
 #loadedboards {
     background-image: url(images/loadedboards.png);
+
+    .hover {
+        background-color: #ea513c;
+    }
 }
 
 #medallionmedia {
     background-image: url(images/mm.png);
     background-size: 35%;
+
+    .hover {
+        background-color: #18b2b8;
+    }
 }
 
 #muradbuzz {
     background-image: url(images/buzz.png);
+
+    .hover {
+        background-color: #03a9f4;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
