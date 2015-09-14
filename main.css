@@ -427,7 +427,7 @@ header {
   #projects .project h3 {
     position: relative;
     margin-bottom: 20px;
-    margin-top: 50%; }
+    margin-top: 32vh; }
   #projects .project h3:before {
     border-bottom: 3px solid #fff;
     content: " ";
