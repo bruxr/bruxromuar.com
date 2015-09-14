@@ -62,9 +62,26 @@ header {
 // Hero
 // 
 // -----------------------------------------------------------------------------
+#projects-btn {
+    background-color: $asphalt;
+    display: none;
+    margin-top: 40px;
+    padding: 10px 15px;
+    position: relative;
+    transition: background-color 250ms ease-out;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     #hero {
         width: 60vw;
+    }
+
+    #projects-btn {
+        display: inline-block;
     }
 }
 
