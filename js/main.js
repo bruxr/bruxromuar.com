@@ -10,6 +10,7 @@ $(function() {
     if (Modernizr.touch) {
         var t;
         $('.project').on('touchstart', function(e) {
+            e.preventDefault();
             var el = $(this);
             t = setTimeout(function() {
                 $(this).toggleClass('hover');
