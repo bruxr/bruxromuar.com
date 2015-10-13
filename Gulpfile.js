@@ -8,20 +8,13 @@ var minify = require('gulp-minify-css');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 
-gulp.task('default', ['styles', 'vendor', 'scripts', 'minify']);
+gulp.task('default', ['styles', 'scripts', 'minify']);
 
 gulp.task('styles', function() {
     gulp.src(['sass/normalize.scss', 'sass/*.scss'])
         .pipe(concat('main.css'))
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest('./'));
-});
-
-gulp.task('vendor', function() {
-    gulp.src(bower())
-        .pipe(concat('vendor.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('./'));
 });
 
