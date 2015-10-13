@@ -31,15 +31,15 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('minify', ['minify-js', 'minify-css']);
+gulp.task('minify', ['minify-scripts', 'minify-styles']);
 
-gulp.task('minify-js', function() {
+gulp.task('minify-scripts', function() {
     return gulp.src('scripts.js')
         .pipe(uglify())
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('minify-css', function() {
+gulp.task('minify-styles', function() {
     return gulp.src('./main.css')
         .pipe(minify())
         .pipe(gulp.dest('./'));
