@@ -1,4 +1,12 @@
 $(function() {
+    $('#projects-btn').on('click', function(e) {
+        e.preventDefault();
+        console.log('aaa');
+        $('body').animate({
+             scrollTop: $('#projects').position().top 
+         }, 'fast', 'swing');
+    });
+    
     if (Modernizr.touch) {
         var t;
         $('.project').on('touchstart', function(e) {

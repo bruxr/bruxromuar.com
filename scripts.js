@@ -1,1 +1,1 @@
-$(function(){if(Modernizr.touch){var t;$(".project").on("touchstart",function(o){$(this);t=setTimeout(function(){$(this).toggleClass("hover")},2e3)}).on("touchend",function(){clearTimeout(t)})}});
+$(function(){if($("#projects-btn").on("click",function(o){o.preventDefault(),console.log("aaa"),$("body").animate({scrollTop:$("#projects").position().top},"fast","swing")}),Modernizr.touch){var o;$(".project").on("touchstart",function(t){$(this);o=setTimeout(function(){$(this).toggleClass("hover")},2e3)}).on("touchend",function(){clearTimeout(o)})}});
