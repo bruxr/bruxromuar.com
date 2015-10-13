@@ -50,7 +50,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 48em) {
     header {
         margin-top: 5vh;
         padding: 50px;
@@ -75,7 +75,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 48em) {
     #hero {
         width: 60vw;
     }
@@ -237,7 +237,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 48em) {
     #projects {
         display: flex;
         flex-wrap: wrap;
