@@ -20,6 +20,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
     gulp.src('js/*.js')
         .pipe(concat('scripts.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./'));
 });
 
