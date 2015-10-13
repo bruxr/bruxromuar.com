@@ -4,7 +4,7 @@ $(function() {
         console.log('aaa');
         $('body').animate({
              scrollTop: $('#projects').position().top 
-         }, 'fast', 'swing');
+         }, 'normal', 'easeInQuart');
     });
     
     if (Modernizr.touch) {
