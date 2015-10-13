@@ -490,13 +490,13 @@ header {
 #failtowardsuccess {
   background-image: url(images/f2s.png);
   background-position: center 70px;
-  background-size: 35%; }
+  background-size: 35vh; }
   #failtowardsuccess .hover {
     background-color: #ffca28; }
 
 #gadgetreview {
   background-image: url(images/gadgetreview.png);
-  background-size: 18%; }
+  background-size: 15vh; }
   #gadgetreview .hover {
     background-color: #e74c3c; }
 
@@ -522,7 +522,7 @@ header {
 
 #medallionmedia {
   background-image: url(images/mm.png);
-  background-size: 30%; }
+  background-size: 30vh; }
   #medallionmedia .hover {
     background-color: #18b2b8; }
 
