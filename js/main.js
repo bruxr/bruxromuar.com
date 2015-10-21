@@ -1,7 +1,6 @@
 $(function() {
     $('#projects-btn').on('click', function(e) {
         e.preventDefault();
-        console.log('aaa');
         $('body').animate({
              scrollTop: $('#projects').position().top 
          }, 'normal', 'easeInQuart');
