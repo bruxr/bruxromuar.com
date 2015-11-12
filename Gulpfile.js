@@ -38,7 +38,7 @@ gulp.task('minify-styles', function() {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['styles', 'scripts'], function() {
     gulp.watch('sass/**/*.scss', ['styles']);
     gulp.watch('js/*.js', ['scripts']);
 });
