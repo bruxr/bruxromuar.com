@@ -79,9 +79,8 @@ a {
     color: #fff;
 
     .project h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         line-height: 2rem;
-        margin-bottom: 15px;
     }
     
     .project h6 {
@@ -110,14 +109,20 @@ footer {
     text-align: center;
 
     h4 {
-        color: #fff;
+        color: $asphalt;
         font-size: 1.75rem;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     a {
         color: $blue;
+        display: inline-block;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 500;
+        transition: color 150ms ease-out;
+    }
+    
+    a:hover {
+        color: lighten($blue, 15%);
     }
 }
