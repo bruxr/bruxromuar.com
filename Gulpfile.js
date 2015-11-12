@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 gulp.task('default', ['styles', 'scripts', 'minify']);
 
 gulp.task('styles', function() {
-    gulp.src(['sass/normalize.scss', 'sass/*.scss'])
+    return gulp.src(['sass/normalize.scss', 'sass/*.scss'])
         .pipe(concat('main.css'))
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
@@ -19,20 +19,20 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-    gulp.src('js/*.js')
+    return gulp.src('js/*.js')
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('minify', ['minify-scripts', 'minify-styles']);
 
-gulp.task('minify-scripts', function() {
+gulp.task('minify-scripts', ['scripts'], function() {
     return gulp.src('scripts.js')
         .pipe(uglify())
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('minify-styles', function() {
+gulp.task('minify-styles', ['styles'], function() {
     return gulp.src('./main.css')
         .pipe(minify())
         .pipe(gulp.dest('./'));
