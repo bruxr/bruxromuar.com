@@ -116,7 +116,6 @@ footer {
 
     a {
         color: $blue;
-        display: inline-block;
         font-size: 1rem;
         font-weight: 500;
         transition: color 150ms ease-out;
@@ -124,5 +123,13 @@ footer {
     
     a:hover {
         color: lighten($blue, 15%);
+    }
+    
+    .social-media a {
+        color: #999;
+    }
+    
+    .social-media a:hover {
+        color: $blue;
     }
 }
