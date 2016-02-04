@@ -220,7 +220,7 @@ function setupNetworks() {
   
   // generate points
   pts = [];
-  var F = 18;
+  var F = 20;
   for (var x = 0; x < width; x = x + width / F) {
     for (var y = 0; y < height; y = y + height / F) {
       var px = x + Math.random() * width / F;
