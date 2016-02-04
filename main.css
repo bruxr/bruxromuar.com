@@ -365,6 +365,7 @@ body {
 
 header {
   padding: 8vw;
+  position: relative;
   min-height: 100vh;
   width: 100%; }
 
@@ -377,6 +378,13 @@ header {
     margin-right: 10px; }
   #connect ul li:last-child {
     margin-right: 0; }
+
+#the-networks {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%; }
 
 @media only screen and (min-width: 48em) {
   header {
