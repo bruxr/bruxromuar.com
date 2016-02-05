@@ -457,9 +457,6 @@ header {
     -webkit-transition: background-position 300ms ease-out;
             transition: background-position 300ms ease-out;
     width: 100vw; }
-  #projects .project:hover,
-  #projects .project.hover {
-    background-position: center 35%; }
   #projects .project:nth-child(even) {
     background-color: #1d1e25; }
   #projects .project h3 {
@@ -497,7 +494,7 @@ header {
 #failtowardsuccess {
   background-image: url(images/f2s.png);
   background-position: center 70px;
-  background-size: 35vh; }
+  background-size: 50%; }
   #failtowardsuccess .hover {
     background-color: #ffca28; }
 
