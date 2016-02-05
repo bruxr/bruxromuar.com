@@ -58,6 +58,10 @@ header {
   position: relative;
   z-index: 10;
   
+  @include phone-landscape {
+    padding-top: 5vh;
+  }
+  
   @include tablet {
     padding-right: 0;
     padding: 20vh 50px 50px 50px;

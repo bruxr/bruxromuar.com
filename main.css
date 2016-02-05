@@ -391,6 +391,9 @@ header {
   padding: 10vh 0;
   position: relative;
   z-index: 10; }
+  @media (min-width: 544px) {
+    #hero {
+      padding-top: 5vh; } }
   @media (min-width: 768px) {
     #hero {
       padding-right: 0;
