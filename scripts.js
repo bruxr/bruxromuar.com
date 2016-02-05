@@ -211,7 +211,6 @@ function setupNetworks() {
   height = el.height();
   
   center = { x: width * 0.66, y: height / 2 };
-  console.log(center);
   
   canvas = el[0];
   canvas.width = width;
@@ -263,7 +262,7 @@ function setupNetworks() {
     pts[i].circle = new Circle(pts[i], 2 + Math.random() * 2, 'rgba(0,0,0,0.005)');
   }
   
-  el.on('mousemove', mouseMove);
+  $('#hero').on('mousemove', mouseMove);
   startAnimate();
 }
 
@@ -323,7 +322,7 @@ function drawLines(pt) {
 }
 
 function mouseMove(e) {
-  var o = $(this).offset();
+  var o = $('#the-networks').offset();
   center.x = e.pageX - o.left;
   center.y = e.pageY - o.top;
 }
