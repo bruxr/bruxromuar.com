@@ -497,6 +497,9 @@ header {
   background-size: 50%; }
   #failtowardsuccess .hover {
     background-color: #ffca28; }
+  @media (min-width: 992px) {
+    #failtowardsuccess {
+      background-size: 30%; } }
 
 #gadgetreview {
   background-image: url(images/gadgetreview.png);

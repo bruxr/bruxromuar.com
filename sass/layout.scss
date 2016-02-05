@@ -198,6 +198,10 @@ header {
     .hover {
         background-color: #ffca28;
     }
+    
+    @include desktop {
+      background-size: 30%;
+    }
 }
 
 #gadgetreview {
