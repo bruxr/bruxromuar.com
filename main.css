@@ -392,8 +392,16 @@ header {
 
 #hero {
   background-color: transparent;
+  padding-top: 10vh;
   position: relative;
   z-index: 10; }
+  @media (min-width: 768px) {
+    #hero {
+      padding-right: 0;
+      padding-top: 20vh; } }
+  @media (min-width: 992px) {
+    #hero {
+      padding-right: 40vw; } }
 
 #projects-btn {
   background-color: #22232B;
@@ -429,8 +437,6 @@ header {
             transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 @media only screen and (min-width: 48em) {
-  #hero {
-    padding-right: 40vw; }
   #projects-btn {
     display: inline-block; } }
 

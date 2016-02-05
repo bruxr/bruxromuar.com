@@ -18,7 +18,6 @@ body {
 // 
 // -----------------------------------------------------------------------------
 header {
-  //padding: 8vw;
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -61,8 +60,18 @@ header {
 // -----------------------------------------------------------------------------
 #hero {
   background-color: transparent;
+  padding-top: 10vh;
   position: relative;
   z-index: 10;
+  
+  @include tablet {
+    padding-right: 0;
+    padding-top: 20vh;
+  }
+  
+  @include desktop {
+    padding-right: 40vw;
+  }
 }
 
 #projects-btn {
@@ -102,10 +111,6 @@ header {
 }
 
 @media only screen and (min-width: 48em) {
-    #hero {
-      padding-right: 40vw;
-    }
-
     #projects-btn {
         display: inline-block;
     }
