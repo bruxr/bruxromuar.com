@@ -437,6 +437,7 @@ header {
 
 #projects {
   color: #fff;
+  margin-left: -5vh;
   /*
     .project h3:before {
         border-bottom: 3px solid #fff;
@@ -449,6 +450,9 @@ header {
         top: -35px;
     }
     */ }
+  @media (min-width: 768px) {
+    #projects {
+      margin-left: 0; } }
   #projects .project {
     background-color: #22232B;
     background-repeat: no-repeat;

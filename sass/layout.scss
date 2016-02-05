@@ -111,6 +111,11 @@ header {
 // -----------------------------------------------------------------------------
 #projects {
     color: #fff;
+    margin-left: -5vh;
+    
+    @include tablet {
+      margin-left: 0;
+    }
 
     .project {
         background-color: $asphalt;
