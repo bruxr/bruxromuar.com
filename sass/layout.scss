@@ -200,18 +200,26 @@ header {
     background-position: center 70px;
     background-size: 50%;
 
-    .hover {
-        background-color: #ffca28;
-    }
-    
     @include desktop {
       background-size: 30%;
+    }
+
+    .hover {
+        background-color: #ffca28;
     }
 }
 
 #gadgetreview {
     background-image: url(images/gadgetreview.png);
     background-size: 15vh;
+
+    @include tablet {
+      background-size: 30%;
+    }
+    
+    @include desktop {
+      background-size: 15%;
+    }
 
     .hover {
         background-color: #e74c3c;
@@ -245,6 +253,14 @@ header {
 #loadedboards {
     background-image: url(images/loadedboards.png);
 
+    @include tablet {
+      background-size: 70%;
+    }
+    
+    @include desktop {
+      background-size: 50%;
+    }
+
     .hover {
         background-color: #ea513c;
     }
@@ -253,6 +269,14 @@ header {
 #medallionmedia {
     background-image: url(images/mm.png);
     background-size: 30vh;
+    
+    @include tablet {
+      background-size: 50%;
+    }
+    
+    @include desktop {
+      background-size: 35%;
+    }
 
     .hover {
         background-color: #18b2b8;
