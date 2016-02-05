@@ -47,12 +47,6 @@ header {
   z-index: 5;
 }
 
-@media only screen and (min-width: 48em) {
-  #hero {
-    padding: 17vh 50px 50px 50px;
-  }
-}
-
 // -----------------------------------------------------------------------------
 // 
 // Hero
@@ -60,13 +54,13 @@ header {
 // -----------------------------------------------------------------------------
 #hero {
   background-color: transparent;
-  padding-top: 10vh;
+  padding: 10vh 0;
   position: relative;
   z-index: 10;
   
   @include tablet {
     padding-right: 0;
-    padding-top: 20vh;
+    padding: 20vh 50px 50px 50px;
   }
   
   @include desktop {
@@ -76,16 +70,12 @@ header {
 
 #projects-btn {
     background-color: $asphalt;
-    display: none;
+    display: inline-block;
     margin-top: 40px;
     overflow: hidden;
     padding: 10px 15px;
     position: relative;
     z-index: 1;
-
-    &:hover {
-        //background-color: $blue;
-    }
     
     &:before {
         background-color: $blue;
@@ -107,12 +97,6 @@ header {
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    }
-}
-
-@media only screen and (min-width: 48em) {
-    #projects-btn {
-        display: inline-block;
     }
 }
 

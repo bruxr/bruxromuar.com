@@ -386,26 +386,22 @@ header {
   width: 80%;
   z-index: 5; }
 
-@media only screen and (min-width: 48em) {
-  #hero {
-    padding: 17vh 50px 50px 50px; } }
-
 #hero {
   background-color: transparent;
-  padding-top: 10vh;
+  padding: 10vh 0;
   position: relative;
   z-index: 10; }
   @media (min-width: 768px) {
     #hero {
       padding-right: 0;
-      padding-top: 20vh; } }
+      padding: 20vh 50px 50px 50px; } }
   @media (min-width: 992px) {
     #hero {
       padding-right: 40vw; } }
 
 #projects-btn {
   background-color: #22232B;
-  display: none;
+  display: inline-block;
   margin-top: 40px;
   overflow: hidden;
   padding: 10px 15px;
@@ -435,10 +431,6 @@ header {
             transform: rotate3d(0, 0, 1, 0deg);
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
             transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-
-@media only screen and (min-width: 48em) {
-  #projects-btn {
-    display: inline-block; } }
 
 #projects {
   color: #fff;
