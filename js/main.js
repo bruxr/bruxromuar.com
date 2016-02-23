@@ -75,10 +75,10 @@ function animate() {
     var dist = Math.abs(distance(center, pt))
     
     if (dist < 8000) {
-      pt.active = 0.05;
+      pt.active = 0.02;
       pt.circle.active = 0.7;
     } else if (dist < 20000) {
-      pt.active = 0.02;
+      pt.active = 0.01;
       pt.circle.active = 0.1;
     } else if (dist < 40000) {
       pt.active = 0.005;
