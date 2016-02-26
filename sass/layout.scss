@@ -328,6 +328,10 @@ footer {
     background-color: $asphalt2;
     height: 350px;
     padding: 15px;
+    
+    @include phone {
+      margin: 0 -5vh -5vh -5vh;
+    }
 
     h4 {
         margin-bottom: -5px;
