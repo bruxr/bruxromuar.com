@@ -151,7 +151,7 @@ $(function() {
   
   $('#projects-btn').on('click', function(e) {
     e.preventDefault();
-    $('body').animate({
+    $('body,html').animate({
        scrollTop: $('#projects').position().top 
      }, 'normal', 'easeInQuart');
   });
