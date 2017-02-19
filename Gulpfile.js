@@ -1,40 +1,23 @@
 'use strict';
 
 var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
 var bower = require('main-bower-files');
 var concat = require('gulp-concat');
 var minify = require('gulp-minify-css');
-var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 
 gulp.task('default', ['styles', 'scripts', 'minify']);
 
 gulp.task('styles', function() {
-    return gulp.src(['sass/normalize.scss', 'sass/*.scss'])
+    return gulp.src(['css/normalize.css', 'css/skeleton.css', 'css/styles.css'])
         .pipe(concat('main.css'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest('./'));
+        .pipe(minify())
+        .pipe(gulp.dest('css/'));
 });
 
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('./'));
-});
-
-gulp.task('minify', ['minify-scripts', 'minify-styles']);
-
-gulp.task('minify-scripts', ['scripts'], function() {
-    return gulp.src('scripts.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./'));
-});
-
-gulp.task('minify-styles', ['styles'], function() {
-    return gulp.src('./main.css')
-        .pipe(minify())
         .pipe(gulp.dest('./'));
 });
 
