@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "bruxromuar",
     "public": ".",
     "ignore": [
       "firebase.json",
