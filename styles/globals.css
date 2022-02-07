@@ -4,6 +4,53 @@
 
 html {
   font: 16px Iter, sans-serif;
+  @apply bg-white;
+}
+
+a {
+  @apply text-blue-800 border-b border-blue-800;
+}
+
+.wrap {
+  @apply p-8 md:p-20;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+/* Homepage-specific */
+.contact-btn {
+  @apply block bg-blue-200 text-blue-800 rounded-full py-3 px-5 hover:bg-blue-800 hover:text-white transition-colors duration-300 border-none;
+}
+
+.section {
+  @apply mt-28 md:mt-52 md:ml-12;
+}
+
+.section h4 {
+  @apply font-bold text-3xl mb-6;
+}
+
+/* Experience section */
+.experience {
+  @apply leading-normal mb-8 md:w-1/2 md:mb-12 lg:w-1/4;
+}
+
+.experience h5 {
+  @apply font-semibold;
+}
+
+.experience-year {
+  @apply block text-gray-200;
+}
+
+/* Links section */
+.link {
+  @apply mb-4 mr-8 lg:mr-20;
+}
+
+.link a {
+  @apply text-black border-white hover:text-blue-800 hover:border-blue-800;
 }
 
 @supports (font-variation-settings: normal) {
