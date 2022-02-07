@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font: 16px Iter, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font: 16px Iter, sans-serif;
+  }
+}
