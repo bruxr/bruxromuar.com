@@ -1,9 +1,0 @@
-{
-  "name": "bruxromuar.com",
-  "version": "2.0.0",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bruxr/bruxr.github.io.git"
-  }
-}
