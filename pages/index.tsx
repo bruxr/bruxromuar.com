@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Icon from '@mdi/react';
+import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
 
 function Home(): React.ReactElement {
   return (
@@ -57,8 +59,9 @@ function Home(): React.ReactElement {
                 <span className="experience-year">2014 - 2016</span>
               </div>
               <div className="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                <a href="#" className="inline-block mt-6">
+                <a href="#" className="inline-block mt-6 pb-1">
                   View my Curriculum Vitae
+                  <i className="arrow-forward" />
                 </a>
               </div>
             </div>
@@ -69,21 +72,25 @@ function Home(): React.ReactElement {
             <ul className="md:flex md:ml-0 md:mt-2">
               <li className="link">
                 <a href="#" rel="noopener noreferrer">
+                  <Icon path={mdiGithub} size="20px" className="inline-block mr-2 align-sub" />
                   Github
                 </a>
               </li>
               <li className="link">
                 <a href="#" rel="noopener noreferrer">
+                  <Icon path={mdiLinkedin} size="20px" className="inline-block mr-2 align-sub" />
                   LinkedIn
                 </a>
               </li>
               <li className="link">
                 <a href="#" rel="noopener noreferrer">
+                  <Icon path={mdiTwitter} size="20px" className="inline-block mr-2 align-sub" />
                   Twitter
                 </a>
               </li>
               <li className="link">
                 <a href="#" rel="noopener noreferrer">
+                  <Icon path={mdiInstagram} size="20px" className="inline-block mr-2 align-sub" />
                   Instagram
                 </a>
               </li>
