@@ -71,25 +71,25 @@ function Home(): React.ReactElement {
             <h4>Links</h4>
             <ul className="md:flex md:ml-0 md:mt-2">
               <li className="link">
-                <a href="#" rel="noopener noreferrer">
+                <a href="https://github.com/bruxr" rel="noopener noreferrer">
                   <Icon path={mdiGithub} size="20px" className="inline-block mr-2 align-sub" />
                   Github
                 </a>
               </li>
               <li className="link">
-                <a href="#" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/bruxromuar" rel="noopener noreferrer">
                   <Icon path={mdiLinkedin} size="20px" className="inline-block mr-2 align-sub" />
                   LinkedIn
                 </a>
               </li>
               <li className="link">
-                <a href="#" rel="noopener noreferrer">
+                <a href="https://twitter.com/brrrux" rel="noopener noreferrer">
                   <Icon path={mdiTwitter} size="20px" className="inline-block mr-2 align-sub" />
                   Twitter
                 </a>
               </li>
               <li className="link">
-                <a href="#" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/brrrux" rel="noopener noreferrer">
                   <Icon path={mdiInstagram} size="20px" className="inline-block mr-2 align-sub" />
                   Instagram
                 </a>
