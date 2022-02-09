@@ -35,7 +35,7 @@ function Home(): React.ReactElement {
 
           <section className="section">
             <h4>Work</h4>
-            <div className="flex-wrap md:flex md:mt-12">
+            <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 md:gap-x-4 lg:grid-cols-4 lg:grid-rows-2">
               <div className="experience">
                 <h5 className="font-semibold">Head of Design</h5>
                 Ingenuity
@@ -56,15 +56,17 @@ function Home(): React.ReactElement {
                 Freelance
                 <span className="experience-year">2014 - 2016</span>
               </div>
+              <div className="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                <a href="#" className="inline-block mt-6">
+                  View my Curriculum Vitae
+                </a>
+              </div>
             </div>
-            <a href="#" className="inline-block mt-6 md:mt-0 lg:mt-12 lg:ml-80">
-              View my Curriculum Vitae
-            </a>
           </section>
 
-          <section className="section md:flex">
+          <section className="section md:grid md:grid-cols-[1fr_3fr] md:gap-x-4">
             <h4>Links</h4>
-            <ul className="md:ml-16 md:mt-3 md:flex lg:ml-68">
+            <ul className="md:flex md:ml-0 md:mt-2">
               <li className="link">
                 <a href="#" rel="noopener noreferrer">
                   Github

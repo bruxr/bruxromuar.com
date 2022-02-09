@@ -33,7 +33,7 @@ a {
 
 /* Experience section */
 .experience {
-  @apply leading-normal mb-8 md:w-1/2 md:mb-12 lg:w-1/4;
+  @apply leading-normal mb-8;
 }
 
 .experience h5 {
