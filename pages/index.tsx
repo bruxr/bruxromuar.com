@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Icon from '@mdi/react';
+import AnimatedText from 'react-animated-text-content';
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
 
 import DarkModeToggle from '../components/DarkModeToggle';
@@ -28,7 +29,13 @@ function Home(): React.ReactElement {
         <main>
           <section>
             <h3 className="font-bold text-5xl leading-tight mt-24 md:text-6xl md:mt-32 md:mr-8 md:ml-12 lg:mt-48 lg:text-8xl dark:text-white">
-              Building user interfaces for the modern web
+              <AnimatedText
+                duration={1}
+                interval={0.1}
+                animation={{ ease: 'ease-in-out', y: '50px' }}
+              >
+                Building user interfaces for the modern web
+              </AnimatedText>
             </h3>
             <p className="text-gray-400 leading-relaxed mt-10 md:ml-56 lg:text-lg xl:w-112 xl:ml-96 dark:text-cool-gray-600">
               Hello! I&apos;m Brux Romuar, a software developer specializing in frontend
