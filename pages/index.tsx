@@ -64,7 +64,12 @@ function Home(): React.ReactElement {
                 <span className="experience-year">2014 - 2016</span>
               </div>
               <div className="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                <a href="#" className="inline-block mt-6 pb-1">
+                <a
+                  href="https://storage.googleapis.com/bruxromuarcom.appspot.com/Brux-Romuar-CV.pdf"
+                  className="inline-block mt-6 pb-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View my Curriculum Vitae
                   <i className="arrow-forward" />
                 </a>
