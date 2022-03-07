@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Icon from '@mdi/react';
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
 
+import DarkModeToggle from '../components/DarkModeToggle';
+
 function Home(): React.ReactElement {
   return (
     <>
@@ -9,15 +11,18 @@ function Home(): React.ReactElement {
         <title>Brux Romuar - Frontend Developer</title>
         <meta name="description" content="Brux Romuar - Frontend Developer" />
       </Head>
-      <div className="wrap max-w dark">
+      <div className="wrap max-w">
         <header className="flex items-center">
           <div>
             <h1 className="font-medium mb-px dark:text-white">Brux Romuar</h1>
             <h2 className="text-gray-200 dark:text-cool-gray-600">Frontend Developer</h2>
           </div>
-          <a href="mailto:hello@bruxromuar.com" className="contact-btn ml-auto">
-            Contact
-          </a>
+          <div className="ml-auto flex">
+            <DarkModeToggle />
+            <a href="mailto:hello@bruxromuar.com" className="contact-btn ml-2 md:ml-4">
+              Contact
+            </a>
+          </div>
         </header>
 
         <main>
