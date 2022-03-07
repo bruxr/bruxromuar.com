@@ -31,8 +31,6 @@ function DarkModeToggle(): React.ReactElement {
     }
   }, [darkMode]);
 
-  console.log(darkMode);
-
   return (
     <button
       type="button"
