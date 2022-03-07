@@ -9,7 +9,7 @@ function Home(): React.ReactElement {
         <title>Brux Romuar - Frontend Developer</title>
         <meta name="description" content="Brux Romuar - Frontend Developer" />
       </Head>
-      <div className="wrap max-w-">
+      <div className="wrap max-w">
         <header className="flex items-center">
           <div>
             <h1 className="font-medium mb-px">Brux Romuar</h1>
