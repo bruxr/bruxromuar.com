@@ -9,6 +9,7 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@emotion/css": "^11.7.1",
     "@fontsource/inter": "^4.5.3",
     "@mdi/js": "^6.5.95",
     "@mdi/react": "^1.5.0",
@@ -16,13 +17,13 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-animated-text-content": "^1.0.1",
-    "react-dom": "17.0.2",
-    "react-reveal": "^1.2.2",
-    "react-transition-group": "^4.4.2"
+    "react-awesome-reveal": "^3.8.1",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "17.0.15",
     "@types/react": "17.0.39",
+    "@types/react-transition-group": "^4.4.4",
     "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
