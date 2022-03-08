@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Icon from '@mdi/react';
+import { Fade } from 'react-awesome-reveal';
 import AnimatedText from 'react-animated-text-content';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
 
 import DarkModeToggle from '../components/DarkModeToggle';
@@ -37,14 +39,16 @@ function Home(): React.ReactElement {
                 Building user interfaces for the modern web
               </AnimatedText>
             </h3>
-            <p className="text-gray-400 leading-relaxed mt-10 md:ml-56 lg:text-lg xl:w-112 xl:ml-96 dark:text-cool-gray-600">
-              Hello! I&apos;m Brux Romuar, a software developer specializing in frontend
-              development. I am currently a freelancer and previously worked at{' '}
-              <a href="https://ingenuity.ph/" target="_blank" rel="noopener noreferrer">
-                Ingenuity
-              </a>
-              . Welcome to my humble corner where I will be in the future, sharing my ideas.
-            </p>
+            <Fade delay={1200} triggerOnce>
+              <p className="text-gray-400 leading-relaxed mt-10 md:ml-56 lg:text-lg xl:w-112 xl:ml-96 dark:text-cool-gray-600">
+                Hello! I&apos;m Brux Romuar, a software developer specializing in frontend
+                development. I am currently a freelancer and previously worked at{' '}
+                <a href="https://ingenuity.ph/" target="_blank" rel="noopener noreferrer">
+                  Ingenuity
+                </a>
+                . Welcome to my humble corner where I will be in the future, sharing my ideas.
+              </p>
+            </Fade>
           </section>
 
           <section className="section">
@@ -86,32 +90,28 @@ function Home(): React.ReactElement {
 
           <section className="section md:grid md:grid-cols-[1fr_3fr] md:gap-x-4">
             <h4 className="dark:text-white">Links</h4>
-            <ul className="md:flex md:ml-0 md:mt-2">
-              <li className="link">
-                <a href="https://github.com/bruxr" rel="noopener noreferrer">
-                  <Icon path={mdiGithub} size="20px" className="inline-block mr-2 align-sub" />
-                  Github
-                </a>
-              </li>
-              <li className="link">
-                <a href="https://www.linkedin.com/in/bruxromuar" rel="noopener noreferrer">
-                  <Icon path={mdiLinkedin} size="20px" className="inline-block mr-2 align-sub" />
-                  LinkedIn
-                </a>
-              </li>
-              <li className="link">
-                <a href="https://twitter.com/brrrux" rel="noopener noreferrer">
-                  <Icon path={mdiTwitter} size="20px" className="inline-block mr-2 align-sub" />
-                  Twitter
-                </a>
-              </li>
-              <li className="link">
-                <a href="https://www.instagram.com/brrrux" rel="noopener noreferrer">
-                  <Icon path={mdiInstagram} size="20px" className="inline-block mr-2 align-sub" />
-                  Instagram
-                </a>
-              </li>
-            </ul>
+            <div className="md:flex md:ml-0 md:mt-2">
+              <a href="https://github.com/bruxr" rel="noopener noreferrer" className="link">
+                <Icon path={mdiGithub} size="20px" className="inline-block mr-2 align-sub" />
+                Github
+              </a>
+              <a
+                href="https://www.linkedin.com/in/bruxromuar"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                <Icon path={mdiLinkedin} size="20px" className="inline-block mr-2 align-sub" />
+                LinkedIn
+              </a>
+              <a href="https://twitter.com/brrrux" rel="noopener noreferrer" className="link">
+                <Icon path={mdiTwitter} size="20px" className="inline-block mr-2 align-sub" />
+                Twitter
+              </a>
+              <a href="https://www.instagram.com/brrrux" rel="noopener noreferrer" className="link">
+                <Icon path={mdiInstagram} size="20px" className="inline-block mr-2 align-sub" />
+                Instagram
+              </a>
+            </div>
           </section>
         </main>
 
