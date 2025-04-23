@@ -12,16 +12,13 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
-    "@emotion/css": "^11.7.1",
     "@fontsource/inter": "^4.5.3",
     "@mdi/js": "^6.5.95",
     "@mdi/react": "^1.5.0",
     "classnames": "^2.3.1",
-    "next": "14.2.26",
-    "react": "17.0.2",
-    "react-animated-text-content": "^1.0.1",
-    "react-awesome-reveal": "^3.8.1",
-    "react-dom": "17.0.2"
+    "next": "^14.2.26",
+    "react-animated-text-content": "github:bruxr/react-animated-text-content",
+    "react-awesome-reveal": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "17.0.15",

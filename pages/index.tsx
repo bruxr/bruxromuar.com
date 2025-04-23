@@ -92,7 +92,7 @@ function Home(): React.ReactElement {
                   className="inline-block mt-6 pb- text-blue-800 border-b border-blue-800 dark:text-blue-600"
                   onClick={() => window.open(RESUME_PATH)}
                 >
-                  View my Curriculum Vitae
+                  View my Resume
                   <i className="arrow-forward" />
                 </button>
               </div>
