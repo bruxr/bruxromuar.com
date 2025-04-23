@@ -4,8 +4,33 @@ import { Fade } from 'react-awesome-reveal';
 import AnimatedText from 'react-animated-text-content';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
+import { Experience } from '../types';
 
 import DarkModeToggle from '../components/DarkModeToggle';
+import WorkExperience from '../components/WorkExperience';
+
+const WORK_EXPERIENCE: Experience[] = [
+  {
+    company: 'Scan.art',
+    position: 'Senior Frontend Engineer',
+    year: '2022 - Present',
+  },
+  {
+    company: 'Bounce the Line',
+    position: 'Senior Software Engineer',
+    year: '2022 - 2024',
+  },
+  {
+    company: 'Ingenuity',
+    position: 'Lead Frontend Engineer',
+    year: '2019 - 2021',
+  },
+  {
+    company: 'Ingenuity',
+    position: 'Software Engineer',
+    year: '2016 - 2019',
+  },
+];
 
 function Home(): React.ReactElement {
   return (
@@ -54,26 +79,14 @@ function Home(): React.ReactElement {
           <section className="section">
             <h4 className="dark:text-white">Work</h4>
             <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 md:gap-x-4 lg:grid-cols-4 lg:grid-rows-2">
-              <div className="experience">
-                <h5 className="font-semibold dark:text-white">Head of Design</h5>
-                <span className="dark:text-cool-gray-600">Ingenuity</span>
-                <span className="experience-year">2021</span>
-              </div>
-              <div className="experience">
-                <h5 className="font-semibold dark:text-white">Lead Frontend Developer</h5>
-                <span className="dark:text-cool-gray-600">Ingenuity</span>
-                <span className="experience-year">2018 - 2020</span>
-              </div>
-              <div className="experience">
-                <h5 className="font-semibold dark:text-white">Software Developer</h5>
-                <span className="dark:text-cool-gray-600">Ingenuity</span>
-                <span className="experience-year">2016 - 2018</span>
-              </div>
-              <div className="experience">
-                <h5 className="font-semibold dark:text-white">Web Developer</h5>
-                <span className="dark:text-cool-gray-600">Freelance</span>
-                <span className="experience-year">2014 - 2016</span>
-              </div>
+              {WORK_EXPERIENCE.map((experience, index) => (
+                <WorkExperience
+                  key={index}
+                  position={experience.position}
+                  company={experience.company}
+                  year={experience.year}
+                />
+              ))}
               <div className="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
                 <a
                   href="https://storage.googleapis.com/bruxromuarcom.appspot.com/Brux-Romuar-CV.pdf"
