@@ -11,14 +11,14 @@ function Home(): React.ReactElement {
   return (
     <>
       <Head>
-        <title>Brux Romuar - Frontend Developer</title>
+        <title>Brux Romuar - Frontend Engineer</title>
         <meta name="description" content="Brux Romuar - Frontend Developer" />
       </Head>
       <div className="wrap max-w">
         <header className="flex items-center">
           <div>
             <h1 className="font-medium mb-px dark:text-white">Brux Romuar</h1>
-            <h2 className="text-gray-200 dark:text-cool-gray-600">Frontend Developer</h2>
+            <h2 className="text-gray-200 dark:text-cool-gray-600">Frontend Engineer</h2>
           </div>
           <div className="ml-auto flex">
             <DarkModeToggle />
@@ -41,12 +41,9 @@ function Home(): React.ReactElement {
             </h3>
             <Fade delay={1200} triggerOnce>
               <p className="text-gray-400 leading-relaxed mt-10 md:ml-56 lg:text-lg xl:w-112 xl:ml-96 dark:text-cool-gray-600">
-                Hello! I&apos;m Brux Romuar, a software developer specializing in frontend
-                development. I am currently a freelancer and previously worked at{' '}
-                <a href="https://ingenuity.ph/" target="_blank" rel="noopener noreferrer">
-                  Ingenuity
-                </a>
-                . Welcome to my humble corner where I will be in the future, sharing my ideas.
+                Hello! I&apos;m Brux Romuar, a software engineer specializing in frontend
+                development. Welcome to my humble corner where I will be in the future, sharing my
+                ideas.
               </p>
             </Fade>
           </section>
