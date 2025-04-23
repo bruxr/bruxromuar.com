@@ -116,10 +116,6 @@ function Home(): React.ReactElement {
                 <Icon path={mdiLinkedin} size="20px" className="inline-block mr-2 align-sub" />
                 LinkedIn
               </a>
-              <a href="https://twitter.com/brrrux" rel="noopener noreferrer" className="link">
-                <Icon path={mdiTwitter} size="20px" className="inline-block mr-2 align-sub" />
-                Twitter
-              </a>
               <a href="https://www.instagram.com/brrrux" rel="noopener noreferrer" className="link">
                 <Icon path={mdiInstagram} size="20px" className="inline-block mr-2 align-sub" />
                 Instagram
