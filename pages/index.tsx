@@ -2,10 +2,9 @@ import Head from 'next/head';
 import Icon from '@mdi/react';
 import { Fade } from 'react-awesome-reveal';
 import AnimatedText from 'react-animated-text-content';
-import TransitionGroup from 'react-transition-group/TransitionGroup';
-import { mdiGithub, mdiLinkedin, mdiTwitter, mdiInstagram } from '@mdi/js';
-import { Experience } from '../types';
+import { mdiGithub, mdiLinkedin, mdiInstagram } from '@mdi/js';
 
+import { Experience } from '../types';
 import DarkModeToggle from '../components/DarkModeToggle';
 import WorkExperience from '../components/WorkExperience';
 
