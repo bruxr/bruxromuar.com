@@ -31,6 +31,9 @@ const WORK_EXPERIENCE: Experience[] = [
   },
 ];
 
+const RESUME_PATH =
+  'https://storage.googleapis.com/bruxromuarcom.appspot.com/Bruxelles-Romuar-Resume.pdf';
+
 function Home(): React.ReactElement {
   return (
     <>
@@ -87,15 +90,14 @@ function Home(): React.ReactElement {
                 />
               ))}
               <div className="lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                <a
-                  href="https://storage.googleapis.com/bruxromuarcom.appspot.com/Brux-Romuar-CV.pdf"
-                  className="inline-block mt-6 pb-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  className="inline-block mt-6 pb- text-blue-800 border-b border-blue-800 dark:text-blue-600"
+                  onClick={() => window.open(RESUME_PATH)}
                 >
                   View my Curriculum Vitae
                   <i className="arrow-forward" />
-                </a>
+                </button>
               </div>
             </div>
           </section>
