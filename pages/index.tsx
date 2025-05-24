@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Icon from '@mdi/react';
+import { useEffect, useMemo, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import AnimatedText from 'react-animated-text-content';
 import { mdiGithub, mdiLinkedin, mdiInstagram } from '@mdi/js';
@@ -35,17 +36,23 @@ const RESUME_PATH =
   'https://storage.googleapis.com/bruxromuarcom.appspot.com/Bruxelles-Romuar-Resume.pdf';
 
 function Home(): React.ReactElement {
+  const [year, setYear] = useState('-')
+
+  useEffect(() => {
+    setYear((new Date()).getFullYear().toString())
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Brux Romuar - Frontend Developer</title>
-        <meta name="description" content="Brux Romuar - Frontend Developer" />
+        <title>Brux Romuar - Software Engineer</title>
+        <meta name="description" content="Brux Romuar - Software Engineer" />
       </Head>
       <div className="wrap max-w">
         <header className="flex items-center">
           <div>
             <h1 className="font-medium mb-px dark:text-white">Brux Romuar</h1>
-            <h2 className="text-gray-200 dark:text-cool-gray-600">Frontend Developer</h2>
+            <h2 className="text-gray-200 dark:text-cool-gray-600">Software Engineer</h2>
           </div>
           <div className="ml-auto flex">
             <DarkModeToggle />
@@ -126,7 +133,7 @@ function Home(): React.ReactElement {
         </main>
 
         <footer className="text-gray-200 mt-24 md:mt-48 lg:mt-52 dark:text-cool-gray-600">
-          &copy; 2022 Brux Romuar
+          &copy; {year} Bruxelles Romuar
         </footer>
       </div>
     </>
